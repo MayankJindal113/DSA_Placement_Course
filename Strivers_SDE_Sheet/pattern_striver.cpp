@@ -1,14 +1,20 @@
 #include<iostream>
 using namespace std;
 
+// Numeric Palindrome Equilateral Pyramid
+//    1
+//   121
+//  12321
+// 1234321
+
 int main()
 {   
+   
+    
 
    
 
 }
-
-
 
 
 /*
