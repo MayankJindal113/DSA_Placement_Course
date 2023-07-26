@@ -1,11 +1,10 @@
+/*
+Pattern:
 
 
 
 
-
-
-
-
+*/
 
 
 #include<iostream>
@@ -14,26 +13,60 @@ using namespace std;
 
 int main()
 {   
-
-
-
+    int row=0,col=0;
+    int n;
+    cout<<"Enter the number of layers to be added: ";
+    cin>>n;
+       
+    
 
 
 }
 
 
 
-
-
-
-
-
-
-
-
 /*
 Strivers SDE Sheet:https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
 DAY I : TOPIC SOLVED (1.2 PATTERNS)
+
+
+Q. Fancy Pattern I:
+
+********1********
+*******2*2*******
+******3*3*3******
+*****4*4*4*4*****
+****5*5*5*5*5****
+***6*6*6*6*6*6***
+      
+    for(row =0; row <n;row++)
+    {
+        int i=row;
+        int j=8-row;
+        for(col =0; col <j; col++)
+        {
+           // At ith row print i i times  
+           cout<<"*";
+        }
+        int flag=0;
+        for(j;j<=row+8;j++)
+        {  
+            if(flag%2==0)
+            {
+                cout<<row+1;
+            }
+            else
+            {
+                cout<<"*"; 
+            }
+            flag++;
+        }
+        for(col=row+9;col<17;col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
 
 
 
