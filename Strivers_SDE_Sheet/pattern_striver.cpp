@@ -1,20 +1,34 @@
+
+
+
+
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
 
-// Numeric Palindrome Equilateral Pyramid
-//    1
-//   121
-//  12321
-// 1234321
 
 int main()
 {   
-   
-    
 
-   
+
+
+
 
 }
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -22,6 +36,34 @@ Strivers SDE Sheet:https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z
 DAY I : TOPIC SOLVED (1.2 PATTERNS)
 
 
+
+Q. Numeric Palindrome Equilateral Pyramid
+     1
+    121
+   12321
+  1234321
+ 123454321
+
+    for(col;col<n;col++)
+    {
+        int i=n-col-1;
+        
+        for(i;i>=0;i--)
+        {
+            cout<<" ";   
+        }
+        int j=0;
+        for(j;j<=col;j++)
+        {
+            cout<<j+1;
+        }
+        j--;
+        for(j;j>0;j--)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
 
 Q11. 
 int n=5;
