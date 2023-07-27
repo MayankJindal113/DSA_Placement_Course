@@ -1,15 +1,6 @@
 /*
-Butterfly Pattern :
-  n*n pattern 
-  01234567
-0 *      *
-1 **    **
-2 ***  ***
-3 ********
-4 ********
-5 ***  ***
-6 **    **
-7 *      *
+Total patterns solved : 13 
+Mixed : from DSA course and few from striver's sde sheet
 
 */
 
@@ -23,9 +14,6 @@ int main()
     int n;
     cout<<"Enter the number of layers to be added: ";
     cin>>n;
-  
-
-    
 }
 
 
