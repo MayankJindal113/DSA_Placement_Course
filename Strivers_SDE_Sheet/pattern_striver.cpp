@@ -1,11 +1,17 @@
 /*
-Pattern:
-
-
-
+Butterfly Pattern :
+  n*n pattern 
+  01234567
+0 *      *
+1 **    **
+2 ***  ***
+3 ********
+4 ********
+5 ***  ***
+6 **    **
+7 *      *
 
 */
-
 
 #include<iostream>
 using namespace std;
@@ -13,21 +19,93 @@ using namespace std;
 
 int main()
 {   
-    int row=0,col=0;
+    int row=0,col;
     int n;
     cout<<"Enter the number of layers to be added: ";
     cin>>n;
-       
+  
+
     
-
-
 }
 
 
 
 /*
 Strivers SDE Sheet:https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-DAY I : TOPIC SOLVED (1.2 PATTERNS)
+Q. Butterfly Pattern :
+
+*      *
+**    **
+***  ***
+********
+********
+***  ***
+**    **
+*      *
+PS. n*n Pattern 
+
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+1234554321
+1234  4321
+123    321
+12      21
+1        1
+
+while(row<n)
+    {
+        int rowh= row<n/2? row: (n-1)-row;
+        for(col=0;col<=rowh;col++)
+        {
+            cout<<col+1;
+        }
+            int space=n-2*(rowh+1);
+        while(space!=0)
+        {
+            cout<<" ";
+            space--;
+        }
+        for(col=rowh;col>=0;col--)
+        {
+            cout<<col+1;
+        }
+
+        cout<<endl;
+        row++;
+    }
+
+
+
+
+Q.Fancy Pattern III:
+
+*1*
+*121*
+*12321*
+*1234321*
+*12321*
+*121*
+*1*
+for(row;row<n;row++)
+    {   cout<<"*";
+        int rowh= row<=n/2 ? (2*row+1) : (2*(n-row)-1);
+
+        for(col=0;col<=rowh/2;col++)
+        {
+            cout<<col+1;
+        }  
+        col--;
+        for(col;col>0;col--)
+        {
+            cout<<col;
+        }
+        cout<<"*";
+         cout<<endl;
+    }
+
 
 
 Q. Fancy Pattern I:
