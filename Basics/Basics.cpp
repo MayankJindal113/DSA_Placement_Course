@@ -10,12 +10,9 @@ using namespace std;
 int main()
 {
     
-    int a=10;
-    int * ptr=&a;
-    int *dusraptr=ptr;
-    (*dusraptr)++;
-    cout<<a;
-
+    int arr[4]={0,1,2,3};
+    cout<<endl;
+    
 }
 
 
@@ -61,7 +58,7 @@ vector<int>nums={2,0,2,1,1,0};
     vec1.pop_back();
     displ(vec1);    
 
-------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 POINTERS:
   
     int * aaa;
@@ -93,7 +90,23 @@ POINTERS:
     (*dusraptr)++;
     cout<<a;
 
-    
+    -------- -------- -------- -------- --------
+    Arrays as pointer :
+    int arr[4]={0,1,2,3};
+    cout<<arr;cout<<endl;
+    cout<<&arr[0];cout<<endl;
+    cout<<&arr;cout<<endl;
+    All the above are the same i.e base address
 
+
+    cout<<arr[0];cout<<endl;
+    cout<<arr;cout<<endl;
+    cout<<&arr[0];cout<<endl;
+    cout<<&arr;cout<<endl;
+    cout<<*arr;cout<<endl;
+    cout<<*(arr+3);
+    cout<<arr[3];
+    cout<<2[arr];
+    // arr[i]=i[arr]=*(i+arr);
 
 */
