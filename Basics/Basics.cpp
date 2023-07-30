@@ -1,7 +1,6 @@
 
 
 #include<iostream>
-#include<vector>
 using namespace std;
 
 
@@ -10,8 +9,10 @@ using namespace std;
 int main()
 {
     
-    int arr[4]={0,1,2,3};
-    cout<<endl;
+    char c[5] = "have";
+    char * ch=c;
+    cout<<ch;   //Ideally it should print the base-address of char array but it prints the whole char
+    //  its reason is that the implementation of cout is different for char and int datatypes..
     
 }
 
