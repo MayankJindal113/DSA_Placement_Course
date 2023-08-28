@@ -9,11 +9,8 @@ using namespace std;
 int main()
 {
     
-    char c[5] = "have";
-    char * ch=c;
-    cout<<ch;   //Ideally it should print the base-address of char array but it prints the whole char
-    //  its reason is that the implementation of cout is different for char and int datatypes..
-    
+   
+
 }
 
 
@@ -60,54 +57,3 @@ vector<int>nums={2,0,2,1,1,0};
     displ(vec1);    
 
 ---------------------------------------------------------------------------------------------------
-POINTERS:
-  
-    int * aaa;
-    cout<<*aaa;// Bad Practice so should declare nullptr always
-    int * ppt=nullptr;
-    cout<<*ppt;
-
-
-    cout<<sizeof(chh)<<endl;
-    cout<<sizeof(v);
-    cout<<sizeof(p);
-    The size of a pointer is regardless of the type of data it points to as its storing 
-
-
-    cout<<(*ptr)++<<endl;
-    cout<<a<<endl;
-    cout<<ptr++<<endl;
-    cout<<ptr<<endl;
-
-
-    int a=10;
-    int * ptr=&a;
-    (*ptr)=(*ptr)*2;
-    cout<<a;
-    
-    int a=10;
-    int * ptr=&a;
-    int *dusraptr=ptr;
-    (*dusraptr)++;
-    cout<<a;
-
-    -------- -------- -------- -------- --------
-    Arrays as pointer :
-    int arr[4]={0,1,2,3};
-    cout<<arr;cout<<endl;
-    cout<<&arr[0];cout<<endl;
-    cout<<&arr;cout<<endl;
-    All the above are the same i.e base address
-
-
-    cout<<arr[0];cout<<endl;
-    cout<<arr;cout<<endl;
-    cout<<&arr[0];cout<<endl;
-    cout<<&arr;cout<<endl;
-    cout<<*arr;cout<<endl;
-    cout<<*(arr+3);
-    cout<<arr[3];
-    cout<<2[arr];
-    // arr[i]=i[arr]=*(i+arr);
-
-*/
